@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+
+.vhhh {
+    color: gray;
+    text-decoration: none;
+} 
+
+.vhhh:hover{
+    color: black;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: green;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin: 0;
+}
+
+
+  .progress-bar {
+    display: flex;
+    background-color: #f8f8f8;
+    padding: 9px 0;
+    gap: 15px; 
+}
+
+.progress-bar .step {
+    text-align: center;
+    padding: 10px 20px;
+    border: 0 solid #ccc;
+    border-radius: 5px;
+    color: #888;
+}
+
+#sp1{
+    
+    color: red;
+}
+
+
+.roop{
+    text-decoration: none;
+    color: black;
+}
+
+.progress-bar .step:hover {
+    color: black;
+    cursor: pointer;
+
+}
+
+.ll:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.bbnn:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.hh:hover{
+
+    color: red;
+    cursor: pointer;
+
+}
+
+.progress-bar .active {
+    color: #000;
+    font-weight: bold;
+    background-color: #e0ffe0;
+}
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .plan {
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .plan.selected {
+    border-color: #4caf50;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .plan:hover {
+    transform: scale(1.05);
+  }
+  
+  .plan-header h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .plan-header p {
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .plan-body p {
+    margin: 10px 0;
+  }
+  
+  .plan-body .discount {
+    color: #e53935;
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 20px 0;
+  }
+  
+  ul li {
+    margin: 5px 0;
+  }
+  
+  ul li.unavailable {
+    color: #bbb;
+  }
+  
+  .btn {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    color: #000;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .btn:hover:not(.disabled) {
+    background-color: #f1b800;
+  }
+  
+  @media (max-width: 768px) {
+    .plans {
+      grid-template-columns: 1fr;
+    }
+  }
+  

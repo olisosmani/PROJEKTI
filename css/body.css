@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: green;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin: 0;
+}
+
+.progress-bar {
+    display: flex;
+    background-color: #f8f8f8;
+    padding: 9px 0;
+    gap: 15px; 
+}
+
+.progress-bar .step {
+    text-align: center;
+    padding: 10px 20px;
+    border: 0 solid #ccc;
+    border-radius: 5px;
+    color: #888;
+}
+
+.plaaa{
+    text-decoration: none;
+    color: gray;
+}
+
+.plaaa:hover{
+    color: black;
+}
+
+.progress-bar .step:hover {
+    color: black;
+    cursor: pointer;
+
+}
+
+.ll:hover{
+    
+    color: red;
+    cursor: pointer;
+}
+
+.bbnn:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.hh:hover{
+
+    color: red;
+    cursor: pointer;
+
+}
+
+.progress-bar .active {
+    color: #000;
+    font-weight: bold;
+    background-color: #e0ffe0;
+}
+
+main {
+    padding: 20px;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filters select,
+.filters button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.vehicle {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.vehicle img {
+    width: 150px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.vehicle .details {
+    flex: 1;
+}
+
+.roop{
+    text-decoration: none;
+    color: black;
+}
+
+.vehicle .tags {
+    color: blue;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.vehicle .price {
+    color: green;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.tra:hover {
+    cursor: pointer;
+}
+
+.tra1:hover{
+    color: red;
+    cursor: pointer;
+
+}
+
+.select-btn {
+    background-color: #ffc107;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.select-btn:hover {
+    background-color: #ffa000;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+    }
+
+    .vehicle {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .vehicle img {
+        width: 100%;
+    }
+
+    .select-btn {
+        align-self: flex-end;
+    }
+}
